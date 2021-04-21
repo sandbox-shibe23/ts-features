@@ -28,8 +28,10 @@ const iobj: IntersectionObject = {
   age: 22,
   id: 1,
 };
+
 const uobj: UnionObject = {
   name: 'Bob',
   age: 22,
+  // @ts-expect-error: address is not defined.
   address: 1, // Error
 };
